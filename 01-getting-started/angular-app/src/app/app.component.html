@@ -1,0 +1,33 @@
+<!-- ! what there was before ... -->
+<!-- <div style="text-align:center">
+  <h1>
+    Hi, this {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+
+<!-- ! Example 1 -->
+<input type="text">
+<p>{{ name }}</p>
+
+<!-- ! now we want to be able to enter somthing in the input and automatically change the name -->
+<!-- ! we can do this with a tool provided by Angular i.e. a DIRECTIVE which is called ngModel -->
+<!-- ! this is a DIRECTIVE: [(ngModel)]="name" and it tells Angular to listen to anything you enter
+  ! here and store it in this name property, and also to output the value of the name model in this input -->
+<!-- ! NB to make it work, go to app.module.ts (this is where we tell Angular which pieces belong to our app 
+  ! + we have to add an import to import another package from Angular) -->
+<!-- ! i.e. import {FormsModule} from '@angular/forms' -->
+<input type="text" [(ngModel)]="name2" placeholder="Start typing something..."/>
+<p>{{ name2 }}</p>
