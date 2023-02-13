@@ -35,3 +35,12 @@ navigate to the folder in which you want to create the project
 >>> cd angular-app/
 >>> ng serve
 - this command brings up a development server that will run your build for development-optimized app so that you can see it in the browser
+
+
+### Bootstrap
+Throughout the course, in order to have quick css styling, we will use Bootstrap. To install it:
+>>> npm install --save bootstrap@3
+
+Then we also need to make Angular aware of this styling package that we want to use. Go to the "angular.json" file (this configures teh CLI project) --> go to "styles":["src/styles.css"] and at the beginning of the array insert "node_modules/bootstrap/dist/css/bootstrap.min.css" then re-start the server with `ng serve`
+
+node_modules/bootstrap/dist/css/bootstrap.min.css
